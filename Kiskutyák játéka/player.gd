@@ -36,13 +36,13 @@ func move_towards(direction):
 			else:
 				return false
 	elif translation.y == 1:
-		if (
-			not _is_group_member_at("walls", translation + direction - Vector3(0, 1, 0)) and 
-			not _is_group_member_at("doors", translation + direction - Vector3(0, 1, 0)) and 
-			not _is_group_member_at("siege_towers", translation + direction - Vector3(0, 1, 0)) and
-			not _is_group_member_at("stairs", translation + direction - Vector3(0, 1, 0))
-		):
-			return false
+#		if (
+#			not _is_group_member_at("walls", translation + direction - Vector3(0, 1, 0)) and 
+#			not _is_group_member_at("doors", translation + direction - Vector3(0, 1, 0)) and 
+#			not _is_group_member_at("siege_towers", translation + direction - Vector3(0, 1, 0)) and
+#			not _is_group_member_at("stairs", translation + direction - Vector3(0, 1, 0))
+#		):
+#			return false
 		var siege_tower = _get_group_member_at("siege_towers", translation + direction - Vector3(0, 1, 0))
 		if (
 			siege_tower and
@@ -82,7 +82,6 @@ func move_towards(direction):
 			y_translation.y += 1
 	if _is_group_member_at("stairs", translation + direction):
 		var stairs = _get_group_member_at("stairs", translation + direction)
-		print("ja")
 		if stairs:
 			if _degrees[-direction] == stairs.rotation_degrees.y:
 				y_translation.y += 0.5
