@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://ground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Models/GLB format/snowman.glb" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://Models/GLB format/cabin-roof-snow.glb" type="PackedScene" id=20]
 [ext_resource path="res://Models/GLB format/cabin-roof-snow-point.glb" type="PackedScene" id=21]
 [ext_resource path="res://Models/GLB format/cabin-wall-roof-center.glb" type="PackedScene" id=22]
+[ext_resource path="res://shiba.tscn" type="PackedScene" id=23]
 
 [node name="Map" type="Spatial"]
 script = ExtResource( 4 )
@@ -841,3 +842,810 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52395, 0.133249, -6.4644 )
 
 [node name="loungeSofa" parent="." instance=ExtResource( 13 )]
 transform = Transform( 0.0144682, 0, 0.999895, 0, 1, 0, -0.999895, 0, 0.0144682, -3.78815, 0, -5.48916 )
+
+[node name="tableCloth2" parent="." instance=ExtResource( 14 )]
+transform = Transform( -0.0297884, 0, 0.999556, 0, 1, 0, -0.999556, 0, -0.0297884, 15.2598, 0, 9.3604 )
+
+[node name="plantSmall1" parent="tableCloth2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.412872, 0.344907, -0.243102 )
+
+[node name="plantSmall2" parent="tableCloth2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.251463, 0.344907, -0.247913 )
+
+[node name="plantSmall3" parent="tableCloth2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.564863, 0.344907, -0.238573 )
+
+[node name="Stairs2" parent="." groups=["stairs"] instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 9 )
+
+[node name="cabin-wall40" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 13 )
+
+[node name="cabin-wall41" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 13 )
+
+[node name="cabin-wall42" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 13 )
+
+[node name="cabin-wall43" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22, 0, 13 )
+
+[node name="cabin-wall44" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22, 0, 11 )
+
+[node name="cabin-wall45" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22, 0, 9 )
+
+[node name="cabin-wall46" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22, 0, 7 )
+
+[node name="cabin-wall47" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 22, 0, 7 )
+
+[node name="cabin-wall48" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 20, 0, 7 )
+
+[node name="cabin-wall49" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 21, 0, 7 )
+
+[node name="cabin-wall50" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 18, 0, 7 )
+
+[node name="cabin-wall51" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16, 0, 7 )
+
+[node name="cabin-wall52" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14, 0, 7 )
+
+[node name="cabin-wall53" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 0, 7 )
+
+[node name="cabin-wall54" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 0, 9 )
+
+[node name="cabin-wall55" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 0, 11 )
+
+[node name="cabin-wall56" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 0, 13 )
+
+[node name="cabin-wall57" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 14, 0, 13 )
+
+[node name="cabin-wall58" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 13 )
+
+[node name="cabin-wall59" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, 13 )
+
+[node name="cabin-wall60" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 13 )
+
+[node name="cabin-wall61" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1, 13 )
+
+[node name="cabin-wall62" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 13 )
+
+[node name="cabin-wall63" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22, 1, 13 )
+
+[node name="cabin-wall64" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22, 1, 11 )
+
+[node name="cabin-wall65" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22, 1, 9 )
+
+[node name="cabin-wall66" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22, 1, 7 )
+
+[node name="cabin-wall67" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 22, 1, 7 )
+
+[node name="cabin-wall68" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 20, 1, 7 )
+
+[node name="cabin-wall69" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 21, 1, 7 )
+
+[node name="cabin-wall70" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 18, 1, 7 )
+
+[node name="cabin-wall71" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16, 1, 7 )
+
+[node name="cabin-wall72" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14, 1, 7 )
+
+[node name="cabin-wall73" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 1, 7 )
+
+[node name="cabin-wall74" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 1, 9 )
+
+[node name="cabin-wall75" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 1, 11 )
+
+[node name="cabin-wall76" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 1, 13 )
+
+[node name="cabin-wall77" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 14, 1, 13 )
+
+[node name="cabin-wall78" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, 13 )
+
+[node name="cabin-wall-roof-center3" parent="." instance=ExtResource( 22 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17, 5, 10 )
+
+[node name="cabin-wall-roof-center4" parent="." instance=ExtResource( 22 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20, 5, 10 )
+
+[node name="cabin-window-a25" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 13 )
+
+[node name="cabin-window-a26" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 13 )
+
+[node name="cabin-window-a27" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 13 )
+
+[node name="cabin-window-a28" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 0, 12 )
+
+[node name="cabin-window-a30" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 0, 8 )
+
+[node name="cabin-window-a31" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 7 )
+
+[node name="cabin-window-a32" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 17, 0, 7 )
+
+[node name="cabin-window-a33" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 19, 0, 7 )
+
+[node name="cabin-window-a34" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 22, 0, 8 )
+
+[node name="cabin-window-a35" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 22, 0, 10 )
+
+[node name="cabin-window-a36" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 22, 0, 12 )
+
+[node name="cabin-window-a37" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 13 )
+
+[node name="cabin-roof-snow-point4" parent="." instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19, 5, 10 )
+
+[node name="cabin-roof-snow-point5" parent="." instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 5, 10 )
+
+[node name="cabin-roof-snow-point6" parent="." instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17, 5, 10 )
+
+[node name="cabin-roof-snow-corner13" parent="." instance=ExtResource( 19 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, 13 )
+
+[node name="cabin-roof-snow-corner14" parent="." instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22, 2, 7 )
+
+[node name="cabin-roof-snow-corner15" parent="." instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21, 3, 8 )
+
+[node name="cabin-roof-snow-corner16" parent="." instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20, 4, 9 )
+
+[node name="cabin-roof-snow-corner17" parent="." instance=ExtResource( 19 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 4, 11 )
+
+[node name="cabin-roof-snow-corner18" parent="." instance=ExtResource( 19 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 3, 12 )
+
+[node name="cabin-roof-snow-corner19" parent="." instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15, 3, 12 )
+
+[node name="cabin-roof-snow-corner20" parent="." instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 16, 4, 11 )
+
+[node name="cabin-roof-snow-corner21" parent="." instance=ExtResource( 19 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 16, 4, 9 )
+
+[node name="cabin-roof-snow-corner22" parent="." instance=ExtResource( 19 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 3, 8 )
+
+[node name="cabin-roof-snow31" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, 12 )
+
+[node name="cabin-roof-snow32" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, 11 )
+
+[node name="cabin-roof-snow39" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, 10 )
+
+[node name="cabin-roof-snow40" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, 9 )
+
+[node name="cabin-roof-snow52" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, 8 )
+
+[node name="cabin-roof-snow54" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21, 2, 7 )
+
+[node name="cabin-roof-snow55" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20, 2, 7 )
+
+[node name="cabin-roof-snow56" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19, 2, 7 )
+
+[node name="cabin-roof-snow57" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 2, 7 )
+
+[node name="cabin-roof-snow58" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17, 2, 7 )
+
+[node name="cabin-roof-snow59" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 2, 7 )
+
+[node name="cabin-roof-snow60" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15, 2, 7 )
+
+[node name="cabin-roof-snow61" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 15, 2, 13 )
+
+[node name="cabin-roof-snow62" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 16, 2, 13 )
+
+[node name="cabin-roof-snow63" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 17, 2, 13 )
+
+[node name="cabin-roof-snow64" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 18, 2, 13 )
+
+[node name="cabin-roof-snow65" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 19, 2, 13 )
+
+[node name="cabin-roof-snow66" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 20, 2, 13 )
+
+[node name="cabin-roof-snow67" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 21, 2, 13 )
+
+[node name="cabin-roof-snow68" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 16, 3, 12 )
+
+[node name="cabin-roof-snow69" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 17, 3, 12 )
+
+[node name="cabin-roof-snow70" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 18, 3, 12 )
+
+[node name="cabin-roof-snow71" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 19, 3, 12 )
+
+[node name="cabin-roof-snow72" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 20, 3, 12 )
+
+[node name="cabin-roof-snow73" parent="." instance=ExtResource( 20 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 20, 3, 8 )
+
+[node name="cabin-roof-snow74" parent="." instance=ExtResource( 20 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 19, 3, 8 )
+
+[node name="cabin-roof-snow75" parent="." instance=ExtResource( 20 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 18, 3, 8 )
+
+[node name="cabin-roof-snow76" parent="." instance=ExtResource( 20 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17, 3, 8 )
+
+[node name="cabin-roof-snow77" parent="." instance=ExtResource( 20 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 16, 3, 8 )
+
+[node name="cabin-roof-snow78" parent="." instance=ExtResource( 20 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 19, 4, 9 )
+
+[node name="cabin-roof-snow79" parent="." instance=ExtResource( 20 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 18, 4, 9 )
+
+[node name="cabin-roof-snow80" parent="." instance=ExtResource( 20 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17, 4, 9 )
+
+[node name="cabin-roof-snow81" parent="." instance=ExtResource( 20 )]
+transform = Transform( 3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 17, 4, 11 )
+
+[node name="cabin-roof-snow82" parent="." instance=ExtResource( 20 )]
+transform = Transform( 3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 18, 4, 11 )
+
+[node name="cabin-roof-snow83" parent="." instance=ExtResource( 20 )]
+transform = Transform( 3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 19, 4, 11 )
+
+[node name="cabin-roof-snow-corner23" parent="." instance=ExtResource( 19 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14, 2, 7 )
+
+[node name="cabin-roof-snow-corner24" parent="." instance=ExtResource( 19 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 2, 13 )
+
+[node name="cabin-roof-snow84" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14, 2, 8 )
+
+[node name="cabin-roof-snow85" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14, 2, 9 )
+
+[node name="cabin-roof-snow86" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14, 2, 10 )
+
+[node name="cabin-roof-snow87" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14, 2, 11 )
+
+[node name="cabin-roof-snow88" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 21, 3, 11 )
+
+[node name="cabin-roof-snow89" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 3, 10 )
+
+[node name="cabin-roof-snow90" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16, 4, 10 )
+
+[node name="cabin-roof-snow91" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 21, 3, 9 )
+
+[node name="cabin-roof-snow92" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 3, 9 )
+
+[node name="cabin-roof-snow93" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 21, 3, 10 )
+
+[node name="cabin-roof-snow94" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 20, 4, 10 )
+
+[node name="cabin-roof-snow95" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 3, 11 )
+
+[node name="cabin-roof-snow96" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14, 2, 12 )
+
+[node name="loungeDesignChair2" parent="." instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.791, 1, 7.21241 )
+
+[node name="tableGlass2" parent="." instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7671, 1.08776, 8.22991 )
+
+[node name="cabin-window-a38" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 13 )
+
+[node name="cabin-window-a49" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 13 )
+
+[node name="cabin-window-a39" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 13 )
+
+[node name="cabin-window-a40" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 1, 12 )
+
+[node name="cabin-window-a41" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 1, 10 )
+
+[node name="cabin-window-a42" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 1, 8 )
+
+[node name="cabin-window-a43" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 1, 7 )
+
+[node name="cabin-window-a44" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 17, 1, 7 )
+
+[node name="cabin-window-a45" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 19, 1, 7 )
+
+[node name="cabin-window-a46" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 22, 1, 8 )
+
+[node name="cabin-window-a47" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 22, 1, 10 )
+
+[node name="cabin-window-a48" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 22, 1, 12 )
+
+[node name="cabin-doorway-center2" parent="." instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 0, 10 )
+
+[node name="cabin-wall-wreath2" parent="." groups=["walls"] instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 13 )
+
+[node name="cabin-corner5" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 13 )
+
+[node name="cabin-corner6" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 6 )
+
+[node name="cabin-corner7" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, 13 )
+
+[node name="cabin-corner8" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, 6 )
+
+[node name="floor-wood106" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 7 )
+
+[node name="floor-wood107" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 7 )
+
+[node name="floor-wood127" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 8 )
+
+[node name="floor-wood128" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 8 )
+
+[node name="floor-wood129" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 7 )
+
+[node name="floor-wood130" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 7 )
+
+[node name="floor-wood131" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 8 )
+
+[node name="floor-wood132" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 8 )
+
+[node name="floor-wood133" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 7 )
+
+[node name="floor-wood134" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 7 )
+
+[node name="floor-wood135" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 8 )
+
+[node name="floor-wood136" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 8 )
+
+[node name="floor-wood137" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 9 )
+
+[node name="floor-wood138" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 9 )
+
+[node name="floor-wood139" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 10 )
+
+[node name="floor-wood140" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 10 )
+
+[node name="floor-wood141" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 9 )
+
+[node name="floor-wood142" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 9 )
+
+[node name="floor-wood143" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 10 )
+
+[node name="floor-wood144" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 10 )
+
+[node name="floor-wood145" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 9 )
+
+[node name="floor-wood146" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 9 )
+
+[node name="floor-wood147" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 10 )
+
+[node name="floor-wood148" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 10 )
+
+[node name="floor-wood149" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 11 )
+
+[node name="floor-wood150" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 11 )
+
+[node name="floor-wood151" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 12 )
+
+[node name="floor-wood152" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 12 )
+
+[node name="floor-wood153" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 11 )
+
+[node name="floor-wood154" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 11 )
+
+[node name="floor-wood155" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 12 )
+
+[node name="floor-wood156" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 12 )
+
+[node name="floor-wood157" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 11 )
+
+[node name="floor-wood158" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 11 )
+
+[node name="floor-wood159" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 12 )
+
+[node name="floor-wood160" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12 )
+
+[node name="floor-wood161" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 11 )
+
+[node name="floor-wood162" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 11 )
+
+[node name="floor-wood163" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 12 )
+
+[node name="floor-wood164" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 12 )
+
+[node name="floor-wood165" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 9 )
+
+[node name="floor-wood166" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 9 )
+
+[node name="floor-wood167" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 10 )
+
+[node name="floor-wood168" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 10 )
+
+[node name="floor-wood169" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 7 )
+
+[node name="floor-wood170" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 7 )
+
+[node name="floor-wood171" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 8 )
+
+[node name="floor-wood172" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 11 )
+
+[node name="floor-wood173" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 12 )
+
+[node name="floor-wood174" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 13 )
+
+[node name="floor-wood175" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 13 )
+
+[node name="floor-wood176" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 13 )
+
+[node name="floor-wood177" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 13 )
+
+[node name="floor-wood178" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 13 )
+
+[node name="floor-wood179" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 13 )
+
+[node name="floor-wood180" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 13 )
+
+[node name="floor-wood181" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 13 )
+
+[node name="floor-wood182" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 13 )
+
+[node name="floor-wood183" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 9 )
+
+[node name="floor-wood184" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 10 )
+
+[node name="floor-wood185" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 7 )
+
+[node name="floor-wood186" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 8 )
+
+[node name="floor-wood187" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 8 )
+
+[node name="floor-wood188" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 7 )
+
+[node name="floor-wood189" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 7 )
+
+[node name="floor-wood190" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 8 )
+
+[node name="floor-wood191" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 8 )
+
+[node name="floor-wood192" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 7 )
+
+[node name="floor-wood193" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 7 )
+
+[node name="floor-wood194" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 8 )
+
+[node name="floor-wood195" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 8 )
+
+[node name="floor-wood196" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, 7 )
+
+[node name="floor-wood197" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 7 )
+
+[node name="floor-wood198" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 8 )
+
+[node name="floor-wood199" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, 8 )
+
+[node name="floor-wood200" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, 9 )
+
+[node name="floor-wood201" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 9 )
+
+[node name="floor-wood202" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, 9 )
+
+[node name="floor-wood203" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, 10 )
+
+[node name="floor-wood204" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 10 )
+
+[node name="floor-wood205" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, 10 )
+
+[node name="floor-wood206" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 9 )
+
+[node name="floor-wood207" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 9 )
+
+[node name="floor-wood208" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 10 )
+
+[node name="floor-wood209" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 10 )
+
+[node name="floor-wood210" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 9 )
+
+[node name="floor-wood211" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 9 )
+
+[node name="floor-wood212" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 10 )
+
+[node name="floor-wood213" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 10 )
+
+[node name="floor-wood214" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 11 )
+
+[node name="floor-wood215" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 11 )
+
+[node name="floor-wood216" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 12 )
+
+[node name="floor-wood217" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 12 )
+
+[node name="floor-wood218" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 11 )
+
+[node name="floor-wood219" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 11 )
+
+[node name="floor-wood220" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 12 )
+
+[node name="floor-wood221" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 12 )
+
+[node name="floor-wood222" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, 11 )
+
+[node name="floor-wood223" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 11 )
+
+[node name="floor-wood224" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 12 )
+
+[node name="floor-wood225" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, 12 )
+
+[node name="floor-wood226" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, 11 )
+
+[node name="floor-wood227" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1, 11 )
+
+[node name="floor-wood228" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1, 12 )
+
+[node name="floor-wood229" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, 12 )
+
+[node name="floor-wood230" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, 7 )
+
+[node name="floor-wood231" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1, 7 )
+
+[node name="floor-wood232" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1, 8 )
+
+[node name="floor-wood233" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 11 )
+
+[node name="floor-wood234" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 12 )
+
+[node name="floor-wood235" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 13 )
+
+[node name="floor-wood236" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 13 )
+
+[node name="floor-wood237" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 13 )
+
+[node name="floor-wood238" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 13 )
+
+[node name="floor-wood239" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 13 )
+
+[node name="floor-wood240" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, 13 )
+
+[node name="floor-wood241" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1, 13 )
+
+[node name="floor-wood242" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, 13 )
+
+[node name="floor-wood243" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 13 )
+
+[node name="floor-wood244" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 9 )
+
+[node name="floor-wood245" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 10 )
+
+[node name="floor-wood246" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 7 )
+
+[node name="floor-wood247" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 8 )
+
+[node name="floor-wood248" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, 8 )
+
+[node name="bedDouble2" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5271, 0, 8.58436 )
+
+[node name="rugRound2" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5239, 0.133249, 8.5356 )
+
+[node name="loungeSofa2" parent="." instance=ExtResource( 13 )]
+transform = Transform( 0.0144682, 0, 0.999895, 0, 1, 0, -0.999895, 0, 0.0144682, 14.2119, 0, 9.51084 )
+
+[node name="Shiba" parent="." instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13, 0, 11 )
