@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://ground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Models/GLB format/snowman.glb" type="PackedScene" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://Models/GLB format/cabin-wall-wreath.glb" type="PackedScene" id=8]
 [ext_resource path="res://Models/GLB format/floor-wood.glb" type="PackedScene" id=9]
 [ext_resource path="res://Models/GLB format/cabin-corner.glb" type="PackedScene" id=10]
+[ext_resource path="res://Models/GLTF format/bedDouble.glb" type="PackedScene" id=11]
+[ext_resource path="res://Models/GLTF format/rugRound.glb" type="PackedScene" id=12]
 
 [node name="Map" type="Spatial"]
 script = ExtResource( 4 )
@@ -322,3 +324,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -7 )
 
 [node name="floor-wood48" parent="." instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -7 )
+
+[node name="bedDouble" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.47294, 0, -6.41564 )
+
+[node name="rugRound" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52395, 0.133249, -6.4644 )

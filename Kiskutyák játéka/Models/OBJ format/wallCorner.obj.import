@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallCorner.obj-b3ca6570fe7c1f79b61563adb72e468c.mesh"
+
+[deps]
+
+files=[ "res://.import/wallCorner.obj-b3ca6570fe7c1f79b61563adb72e468c.mesh" ]
+
+source_file="res://Models/OBJ format/wallCorner.obj"
+dest_files=[ "res://.import/wallCorner.obj-b3ca6570fe7c1f79b61563adb72e468c.mesh", "res://.import/wallCorner.obj-b3ca6570fe7c1f79b61563adb72e468c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

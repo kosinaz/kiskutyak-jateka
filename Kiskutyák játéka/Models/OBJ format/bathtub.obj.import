@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bathtub.obj-10fc2e0edef7bd03e2daf3f8aed0d7a9.mesh"
+
+[deps]
+
+files=[ "res://.import/bathtub.obj-10fc2e0edef7bd03e2daf3f8aed0d7a9.mesh" ]
+
+source_file="res://Models/OBJ format/bathtub.obj"
+dest_files=[ "res://.import/bathtub.obj-10fc2e0edef7bd03e2daf3f8aed0d7a9.mesh", "res://.import/bathtub.obj-10fc2e0edef7bd03e2daf3f8aed0d7a9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

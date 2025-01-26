@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/kitchenBar.obj-1ff4c3faf506f847ecede74ab37a9a72.mesh"
+
+[deps]
+
+files=[ "res://.import/kitchenBar.obj-1ff4c3faf506f847ecede74ab37a9a72.mesh" ]
+
+source_file="res://Models/OBJ format/kitchenBar.obj"
+dest_files=[ "res://.import/kitchenBar.obj-1ff4c3faf506f847ecede74ab37a9a72.mesh", "res://.import/kitchenBar.obj-1ff4c3faf506f847ecede74ab37a9a72.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

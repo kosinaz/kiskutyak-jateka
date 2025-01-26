@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bedBunk.obj-3ab1690f4e0f6c27aef458f708619965.mesh"
+
+[deps]
+
+files=[ "res://.import/bedBunk.obj-3ab1690f4e0f6c27aef458f708619965.mesh" ]
+
+source_file="res://Models/OBJ format/bedBunk.obj"
+dest_files=[ "res://.import/bedBunk.obj-3ab1690f4e0f6c27aef458f708619965.mesh", "res://.import/bedBunk.obj-3ab1690f4e0f6c27aef458f708619965.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

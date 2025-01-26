@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/kitchenCoffeeMachine.obj-7282aa9d8bd8e27f57ef598b6d87509b.mesh"
+
+[deps]
+
+files=[ "res://.import/kitchenCoffeeMachine.obj-7282aa9d8bd8e27f57ef598b6d87509b.mesh" ]
+
+source_file="res://Models/OBJ format/kitchenCoffeeMachine.obj"
+dest_files=[ "res://.import/kitchenCoffeeMachine.obj-7282aa9d8bd8e27f57ef598b6d87509b.mesh", "res://.import/kitchenCoffeeMachine.obj-7282aa9d8bd8e27f57ef598b6d87509b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

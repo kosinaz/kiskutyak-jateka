@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bear.obj-970e423db52142bc47a2013f5643d30b.mesh"
+
+[deps]
+
+files=[ "res://.import/bear.obj-970e423db52142bc47a2013f5643d30b.mesh" ]
+
+source_file="res://Models/OBJ format/bear.obj"
+dest_files=[ "res://.import/bear.obj-970e423db52142bc47a2013f5643d30b.mesh", "res://.import/bear.obj-970e423db52142bc47a2013f5643d30b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

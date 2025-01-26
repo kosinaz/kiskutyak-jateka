@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bathroomCabinetDrawer.obj-5a1dbe2fa919f223d7b54d1d941870cb.mesh"
+
+[deps]
+
+files=[ "res://.import/bathroomCabinetDrawer.obj-5a1dbe2fa919f223d7b54d1d941870cb.mesh" ]
+
+source_file="res://Models/OBJ format/bathroomCabinetDrawer.obj"
+dest_files=[ "res://.import/bathroomCabinetDrawer.obj-5a1dbe2fa919f223d7b54d1d941870cb.mesh", "res://.import/bathroomCabinetDrawer.obj-5a1dbe2fa919f223d7b54d1d941870cb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
