@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Models/GLTF format/stairs.glb" type="PackedScene" id=1]
+
+[node name="Stairs" type="Spatial"]
+
+[node name="stairs" parent="." instance=ExtResource( 1 )]
+transform = Transform( -2.41029e-08, 0, 1.27574, 0, 0.751776, 0, -0.551409, 0, -5.57642e-08, 0.533924, 0, 0.484318 )

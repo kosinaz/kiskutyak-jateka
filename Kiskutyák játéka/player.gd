@@ -82,6 +82,7 @@ func move_towards(direction):
 			y_translation.y += 1
 	if _is_group_member_at("stairs", translation + direction):
 		var stairs = _get_group_member_at("stairs", translation + direction)
+		print("ja")
 		if stairs:
 			if _degrees[-direction] == stairs.rotation_degrees.y:
 				y_translation.y += 0.5
