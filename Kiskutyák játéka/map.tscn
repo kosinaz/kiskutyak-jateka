@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://ground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Models/GLB format/snowman.glb" type="PackedScene" id=2]
@@ -23,6 +23,11 @@
 [ext_resource path="res://Models/GLB format/cabin-roof-snow-point.glb" type="PackedScene" id=21]
 [ext_resource path="res://Models/GLB format/cabin-wall-roof-center.glb" type="PackedScene" id=22]
 [ext_resource path="res://shiba.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Models/GLTF format/bathtub.glb" type="PackedScene" id=24]
+[ext_resource path="res://Models/GLTF format/toilet.glb" type="PackedScene" id=25]
+[ext_resource path="res://Models/GLTF format/cabinetTelevisionDoors.glb" type="PackedScene" id=26]
+[ext_resource path="res://Models/Deer.glb" type="PackedScene" id=27]
+[ext_resource path="res://player2.tscn" type="PackedScene" id=28]
 
 [node name="Map" type="Spatial"]
 script = ExtResource( 4 )
@@ -33,7 +38,7 @@ transform = Transform( 100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 0 )
 [node name="snowman" parent="." instance=ExtResource( 2 )]
 
 [node name="tableCloth" parent="." instance=ExtResource( 14 )]
-transform = Transform( -0.0297884, 0, 0.999556, 0, 1, 0, -0.999556, 0, -0.0297884, -2.74017, 0, -5.6396 )
+transform = Transform( -0.0297884, 0, 0.999556, 0, 1, 0, -0.999556, 0, -0.0297884, -1.78971, 0, -4.71238 )
 
 [node name="plantSmall1" parent="tableCloth" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.412872, 0.344907, -0.243102 )
@@ -51,8 +56,27 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, 
 [node name="Camera" type="Camera" parent="Player"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.809507, -1 )
 
+[node name="Player2" parent="." instance=ExtResource( 28 )]
+unique_name_in_owner = true
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, -7 )
+
 [node name="Stairs" parent="." groups=["stairs"] instance=ExtResource( 16 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6 )
+
+[node name="Stairs3" parent="." groups=["stairs"] instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4 )
+
+[node name="toilet" parent="." instance=ExtResource( 25 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1832, 4, -6.25774 )
+
+[node name="cabinetTelevisionDoors" parent="." instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.4367, 1, -6 )
+
+[node name="bathtub" parent="." instance=ExtResource( 24 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -5.61622 )
+
+[node name="Deer" parent="." instance=ExtResource( 27 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -11, 0, -1 )
 
 [node name="cabin-wall" parent="." groups=["walls"] instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
@@ -107,6 +131,48 @@ transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4, 0, -2
 
 [node name="cabin-wall18" parent="." groups=["walls"] instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -4, 0, -2 )
+
+[node name="cabin-wall79" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -7, 0, -2 )
+
+[node name="cabin-wall80" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -9, 0, -2 )
+
+[node name="cabin-wall81" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -11, 0, -2 )
+
+[node name="cabin-wall82" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -13, 0, -2 )
+
+[node name="cabin-wall83" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 0, -2 )
+
+[node name="cabin-wall84" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 0, -4 )
+
+[node name="cabin-wall85" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 0, -6 )
+
+[node name="cabin-wall86" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -13, 0, -6 )
+
+[node name="cabin-wall87" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -11, 0, -6 )
+
+[node name="cabin-wall88" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -9, 0, -6 )
+
+[node name="cabin-wall89" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -7, 0, -6 )
+
+[node name="cabin-wall90" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 0, -6 )
+
+[node name="cabin-wall91" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 0, -4 )
+
+[node name="cabin-wall92" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 0, -2 )
 
 [node name="cabin-wall2" parent="." groups=["walls"] instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
@@ -185,6 +251,33 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -2 )
 
 [node name="cabin-window-a2" parent="." groups=["walls"] instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -2 )
+
+[node name="cabin-window-a29" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2 )
+
+[node name="cabin-window-a50" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -2 )
+
+[node name="cabin-window-a51" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 0, -3 )
+
+[node name="cabin-window-a52" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 0, -5 )
+
+[node name="cabin-window-a53" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -12, 0, -6 )
+
+[node name="cabin-window-a54" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -10, 0, -6 )
+
+[node name="cabin-window-a55" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -8, 0, -6 )
+
+[node name="cabin-window-a56" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 0, -5 )
+
+[node name="cabin-window-a57" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 0, -3 )
 
 [node name="cabin-window-a3" parent="." groups=["walls"] instance=ExtResource( 5 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0, -3 )
@@ -447,6 +540,9 @@ transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 4, 1, -3 
 [node name="cabin-doorway-center" parent="." instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2 )
 
+[node name="cabin-doorway-center3" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -2 )
+
 [node name="cabin-wall-wreath" parent="." groups=["walls"] instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
 
@@ -623,6 +719,1320 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2 )
 
 [node name="floor-wood59" parent="." instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2 )
+
+[node name="floor-wood249" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -2 )
+
+[node name="floor-wood250" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2 )
+
+[node name="floor-wood251" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -2 )
+
+[node name="floor-wood252" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -2 )
+
+[node name="floor-wood253" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -2 )
+
+[node name="floor-wood254" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -2 )
+
+[node name="floor-wood255" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -2 )
+
+[node name="floor-wood256" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -3 )
+
+[node name="floor-wood257" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -3 )
+
+[node name="floor-wood258" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -3 )
+
+[node name="floor-wood259" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -3 )
+
+[node name="floor-wood260" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -3 )
+
+[node name="floor-wood261" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -3 )
+
+[node name="floor-wood262" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -3 )
+
+[node name="floor-wood263" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -4 )
+
+[node name="floor-wood264" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4 )
+
+[node name="floor-wood265" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -4 )
+
+[node name="floor-wood266" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -4 )
+
+[node name="floor-wood267" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -4 )
+
+[node name="floor-wood268" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -4 )
+
+[node name="floor-wood269" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -4 )
+
+[node name="floor-wood270" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -5 )
+
+[node name="floor-wood271" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -5 )
+
+[node name="floor-wood272" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -5 )
+
+[node name="floor-wood273" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -5 )
+
+[node name="floor-wood274" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -5 )
+
+[node name="floor-wood275" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -5 )
+
+[node name="floor-wood276" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -5 )
+
+[node name="floor-wood277" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -6 )
+
+[node name="floor-wood278" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -6 )
+
+[node name="floor-wood279" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -6 )
+
+[node name="floor-wood280" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -6 )
+
+[node name="floor-wood281" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -6 )
+
+[node name="floor-wood282" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -6 )
+
+[node name="floor-wood283" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -6 )
+
+[node name="floor-wood284" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -2 )
+
+[node name="floor-wood285" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -2 )
+
+[node name="floor-wood286" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -2 )
+
+[node name="floor-wood287" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -2 )
+
+[node name="floor-wood288" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -2 )
+
+[node name="floor-wood289" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -2 )
+
+[node name="floor-wood290" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -2 )
+
+[node name="floor-wood291" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -3 )
+
+[node name="floor-wood292" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -3 )
+
+[node name="floor-wood293" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -3 )
+
+[node name="floor-wood294" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -3 )
+
+[node name="floor-wood295" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -3 )
+
+[node name="floor-wood296" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -3 )
+
+[node name="floor-wood297" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -3 )
+
+[node name="floor-wood298" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -4 )
+
+[node name="floor-wood299" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -4 )
+
+[node name="floor-wood300" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -4 )
+
+[node name="floor-wood301" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -4 )
+
+[node name="floor-wood302" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -4 )
+
+[node name="floor-wood303" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -4 )
+
+[node name="floor-wood304" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -5 )
+
+[node name="floor-wood305" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -5 )
+
+[node name="floor-wood306" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -5 )
+
+[node name="floor-wood317" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -5 )
+
+[node name="floor-wood307" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -5 )
+
+[node name="floor-wood308" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -5 )
+
+[node name="floor-wood309" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -5 )
+
+[node name="floor-wood310" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -6 )
+
+[node name="floor-wood311" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -6 )
+
+[node name="floor-wood312" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -6 )
+
+[node name="floor-wood313" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -6 )
+
+[node name="floor-wood314" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -6 )
+
+[node name="floor-wood315" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -6 )
+
+[node name="floor-wood316" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -6 )
+
+[node name="Stairs4" parent="." groups=["stairs"] instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -4 )
+
+[node name="cabin-wall93" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -7, 1, -2 )
+
+[node name="cabin-wall94" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -9, 1, -2 )
+
+[node name="cabin-wall95" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -11, 1, -2 )
+
+[node name="cabin-wall96" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -13, 1, -2 )
+
+[node name="cabin-wall97" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 1, -2 )
+
+[node name="cabin-wall98" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 1, -4 )
+
+[node name="cabin-wall99" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 1, -6 )
+
+[node name="cabin-wall100" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -13, 1, -6 )
+
+[node name="cabin-wall101" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -11, 1, -6 )
+
+[node name="cabin-wall102" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -9, 1, -6 )
+
+[node name="cabin-wall103" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -7, 1, -6 )
+
+[node name="cabin-wall104" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 1, -6 )
+
+[node name="cabin-wall105" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 1, -4 )
+
+[node name="cabin-wall106" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 1, -2 )
+
+[node name="cabin-window-a58" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -2 )
+
+[node name="cabin-window-a59" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -2 )
+
+[node name="cabin-window-a60" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 1, -3 )
+
+[node name="cabin-window-a61" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 1, -5 )
+
+[node name="cabin-window-a62" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -12, 1, -6 )
+
+[node name="cabin-window-a63" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -10, 1, -6 )
+
+[node name="cabin-window-a64" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -8, 1, -6 )
+
+[node name="cabin-window-a65" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 1, -5 )
+
+[node name="cabin-window-a66" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 1, -3 )
+
+[node name="floor-wood318" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -2 )
+
+[node name="floor-wood319" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -2 )
+
+[node name="floor-wood320" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -2 )
+
+[node name="floor-wood321" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -2 )
+
+[node name="floor-wood322" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -2 )
+
+[node name="floor-wood323" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -2 )
+
+[node name="floor-wood324" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -2 )
+
+[node name="floor-wood325" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -3 )
+
+[node name="floor-wood326" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -3 )
+
+[node name="floor-wood327" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -3 )
+
+[node name="floor-wood328" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -3 )
+
+[node name="floor-wood329" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -3 )
+
+[node name="floor-wood330" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -3 )
+
+[node name="floor-wood331" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -3 )
+
+[node name="floor-wood332" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -4 )
+
+[node name="floor-wood334" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -4 )
+
+[node name="floor-wood335" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -4 )
+
+[node name="floor-wood336" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -4 )
+
+[node name="floor-wood337" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -4 )
+
+[node name="floor-wood338" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -4 )
+
+[node name="floor-wood339" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -5 )
+
+[node name="floor-wood340" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -5 )
+
+[node name="floor-wood341" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -5 )
+
+[node name="floor-wood342" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -5 )
+
+[node name="floor-wood343" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -5 )
+
+[node name="floor-wood344" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -5 )
+
+[node name="floor-wood345" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -5 )
+
+[node name="floor-wood346" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -6 )
+
+[node name="floor-wood347" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -6 )
+
+[node name="floor-wood348" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -6 )
+
+[node name="floor-wood349" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -6 )
+
+[node name="floor-wood350" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -6 )
+
+[node name="floor-wood351" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1, -6 )
+
+[node name="floor-wood352" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, -6 )
+
+[node name="floor-wood353" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -2 )
+
+[node name="floor-wood354" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -2 )
+
+[node name="floor-wood355" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, -2 )
+
+[node name="floor-wood356" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -2 )
+
+[node name="floor-wood357" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -2 )
+
+[node name="floor-wood358" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -2 )
+
+[node name="floor-wood359" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -2 )
+
+[node name="floor-wood360" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -3 )
+
+[node name="floor-wood361" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -3 )
+
+[node name="floor-wood362" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, -3 )
+
+[node name="floor-wood363" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -3 )
+
+[node name="floor-wood364" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -3 )
+
+[node name="floor-wood365" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -3 )
+
+[node name="floor-wood366" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -3 )
+
+[node name="floor-wood367" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -4 )
+
+[node name="floor-wood369" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -4 )
+
+[node name="floor-wood370" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -4 )
+
+[node name="floor-wood371" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -4 )
+
+[node name="floor-wood372" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -4 )
+
+[node name="floor-wood373" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -5 )
+
+[node name="floor-wood374" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -5 )
+
+[node name="floor-wood375" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, -5 )
+
+[node name="floor-wood376" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -5 )
+
+[node name="floor-wood377" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -5 )
+
+[node name="floor-wood378" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -5 )
+
+[node name="floor-wood379" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -5 )
+
+[node name="floor-wood380" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -6 )
+
+[node name="floor-wood381" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -6 )
+
+[node name="floor-wood382" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, -6 )
+
+[node name="floor-wood383" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -6 )
+
+[node name="floor-wood384" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -6 )
+
+[node name="floor-wood385" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -6 )
+
+[node name="floor-wood386" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -6 )
+
+[node name="Stairs5" parent="." groups=["stairs"] instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -4 )
+
+[node name="cabin-wall107" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -7, 2, -2 )
+
+[node name="cabin-wall108" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -9, 2, -2 )
+
+[node name="cabin-wall109" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -11, 2, -2 )
+
+[node name="cabin-wall110" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -13, 2, -2 )
+
+[node name="cabin-wall111" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 2, -2 )
+
+[node name="cabin-wall112" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 2, -4 )
+
+[node name="cabin-wall113" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 2, -6 )
+
+[node name="cabin-wall114" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -13, 2, -6 )
+
+[node name="cabin-wall115" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -11, 2, -6 )
+
+[node name="cabin-wall116" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -9, 2, -6 )
+
+[node name="cabin-wall117" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -7, 2, -6 )
+
+[node name="cabin-wall118" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 2, -6 )
+
+[node name="cabin-wall119" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 2, -4 )
+
+[node name="cabin-wall120" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 2, -2 )
+
+[node name="cabin-window-a67" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -2 )
+
+[node name="cabin-window-a68" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -2 )
+
+[node name="cabin-window-a69" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 2, -3 )
+
+[node name="cabin-window-a70" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 2, -5 )
+
+[node name="cabin-window-a71" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -12, 2, -6 )
+
+[node name="cabin-window-a72" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -10, 2, -6 )
+
+[node name="cabin-window-a73" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -8, 2, -6 )
+
+[node name="cabin-window-a74" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 2, -5 )
+
+[node name="cabin-window-a75" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 2, -3 )
+
+[node name="floor-wood387" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -2 )
+
+[node name="floor-wood388" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -2 )
+
+[node name="floor-wood389" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, -2 )
+
+[node name="floor-wood391" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -2 )
+
+[node name="floor-wood392" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -2 )
+
+[node name="floor-wood393" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -2 )
+
+[node name="floor-wood394" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -3 )
+
+[node name="floor-wood395" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -3 )
+
+[node name="floor-wood396" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, -3 )
+
+[node name="floor-wood397" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -3 )
+
+[node name="floor-wood398" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -3 )
+
+[node name="floor-wood399" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -3 )
+
+[node name="floor-wood400" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -3 )
+
+[node name="floor-wood401" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -4 )
+
+[node name="floor-wood402" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -4 )
+
+[node name="floor-wood404" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -4 )
+
+[node name="floor-wood405" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -4 )
+
+[node name="floor-wood406" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -4 )
+
+[node name="floor-wood407" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -4 )
+
+[node name="floor-wood408" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -5 )
+
+[node name="floor-wood409" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -5 )
+
+[node name="floor-wood410" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, -5 )
+
+[node name="floor-wood411" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -5 )
+
+[node name="floor-wood412" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -5 )
+
+[node name="floor-wood413" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -5 )
+
+[node name="floor-wood414" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -5 )
+
+[node name="floor-wood415" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -6 )
+
+[node name="floor-wood416" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -6 )
+
+[node name="floor-wood417" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, -6 )
+
+[node name="floor-wood418" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -6 )
+
+[node name="floor-wood419" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -6 )
+
+[node name="floor-wood420" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -6 )
+
+[node name="floor-wood421" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, -6 )
+
+[node name="floor-wood422" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -2 )
+
+[node name="floor-wood423" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -2 )
+
+[node name="floor-wood424" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -2 )
+
+[node name="floor-wood425" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -2 )
+
+[node name="floor-wood426" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -2 )
+
+[node name="floor-wood427" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -2 )
+
+[node name="floor-wood428" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -2 )
+
+[node name="floor-wood429" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -3 )
+
+[node name="floor-wood430" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -3 )
+
+[node name="floor-wood431" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -3 )
+
+[node name="floor-wood432" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -3 )
+
+[node name="floor-wood433" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -3 )
+
+[node name="floor-wood434" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -3 )
+
+[node name="floor-wood435" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -3 )
+
+[node name="floor-wood436" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -4 )
+
+[node name="floor-wood437" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -4 )
+
+[node name="floor-wood438" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -4 )
+
+[node name="floor-wood439" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -4 )
+
+[node name="floor-wood440" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -4 )
+
+[node name="floor-wood441" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -4 )
+
+[node name="floor-wood442" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -5 )
+
+[node name="floor-wood443" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -5 )
+
+[node name="floor-wood444" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -5 )
+
+[node name="floor-wood445" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -5 )
+
+[node name="floor-wood446" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -5 )
+
+[node name="floor-wood447" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -5 )
+
+[node name="floor-wood448" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -5 )
+
+[node name="floor-wood449" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -6 )
+
+[node name="floor-wood450" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -6 )
+
+[node name="floor-wood451" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -6 )
+
+[node name="floor-wood452" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -6 )
+
+[node name="floor-wood453" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -6 )
+
+[node name="floor-wood454" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -6 )
+
+[node name="floor-wood455" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -6 )
+
+[node name="Stairs6" parent="." groups=["stairs"] instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -4 )
+
+[node name="cabin-wall121" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -7, 3, -2 )
+
+[node name="cabin-wall122" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -9, 3, -2 )
+
+[node name="cabin-wall123" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -11, 3, -2 )
+
+[node name="cabin-wall124" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -13, 3, -2 )
+
+[node name="cabin-wall125" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 3, -2 )
+
+[node name="cabin-wall126" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 3, -4 )
+
+[node name="cabin-wall127" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 3, -6 )
+
+[node name="cabin-wall128" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -13, 3, -6 )
+
+[node name="cabin-wall129" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -11, 3, -6 )
+
+[node name="cabin-wall130" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -9, 3, -6 )
+
+[node name="cabin-wall131" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -7, 3, -6 )
+
+[node name="cabin-wall132" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 3, -6 )
+
+[node name="cabin-wall133" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 3, -4 )
+
+[node name="cabin-wall134" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 3, -2 )
+
+[node name="cabin-window-a76" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -2 )
+
+[node name="cabin-window-a77" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -2 )
+
+[node name="cabin-window-a78" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 3, -3 )
+
+[node name="cabin-window-a79" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 3, -5 )
+
+[node name="cabin-window-a80" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -12, 3, -6 )
+
+[node name="cabin-window-a81" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -10, 3, -6 )
+
+[node name="cabin-window-a82" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -8, 3, -6 )
+
+[node name="cabin-window-a83" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 3, -5 )
+
+[node name="cabin-window-a84" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 3, -3 )
+
+[node name="floor-wood456" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -2 )
+
+[node name="floor-wood457" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -2 )
+
+[node name="floor-wood458" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -2 )
+
+[node name="floor-wood459" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -2 )
+
+[node name="floor-wood460" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -2 )
+
+[node name="floor-wood461" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -2 )
+
+[node name="floor-wood462" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -2 )
+
+[node name="floor-wood463" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -3 )
+
+[node name="floor-wood464" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -3 )
+
+[node name="floor-wood465" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -3 )
+
+[node name="floor-wood466" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -3 )
+
+[node name="floor-wood467" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -3 )
+
+[node name="floor-wood468" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -3 )
+
+[node name="floor-wood469" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -3 )
+
+[node name="floor-wood470" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -4 )
+
+[node name="floor-wood472" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -4 )
+
+[node name="floor-wood473" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -4 )
+
+[node name="floor-wood474" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -4 )
+
+[node name="floor-wood475" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -4 )
+
+[node name="floor-wood476" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -4 )
+
+[node name="floor-wood477" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -5 )
+
+[node name="floor-wood478" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -5 )
+
+[node name="floor-wood479" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -5 )
+
+[node name="floor-wood480" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -5 )
+
+[node name="floor-wood481" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -5 )
+
+[node name="floor-wood482" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -5 )
+
+[node name="floor-wood483" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -5 )
+
+[node name="floor-wood484" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -6 )
+
+[node name="floor-wood485" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -6 )
+
+[node name="floor-wood486" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, -6 )
+
+[node name="floor-wood487" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -6 )
+
+[node name="floor-wood488" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, -6 )
+
+[node name="floor-wood489" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, -6 )
+
+[node name="floor-wood490" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3, -6 )
+
+[node name="floor-wood491" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -2 )
+
+[node name="floor-wood492" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -2 )
+
+[node name="floor-wood493" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -2 )
+
+[node name="floor-wood494" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -2 )
+
+[node name="floor-wood495" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -2 )
+
+[node name="floor-wood496" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -2 )
+
+[node name="floor-wood497" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -2 )
+
+[node name="floor-wood498" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -3 )
+
+[node name="floor-wood499" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -3 )
+
+[node name="floor-wood500" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -3 )
+
+[node name="floor-wood501" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -3 )
+
+[node name="floor-wood502" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -3 )
+
+[node name="floor-wood503" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -3 )
+
+[node name="floor-wood504" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -3 )
+
+[node name="floor-wood505" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -4 )
+
+[node name="floor-wood507" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -4 )
+
+[node name="floor-wood508" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -4 )
+
+[node name="floor-wood509" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -4 )
+
+[node name="floor-wood510" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -4 )
+
+[node name="floor-wood511" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -5 )
+
+[node name="floor-wood512" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -5 )
+
+[node name="floor-wood513" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -5 )
+
+[node name="floor-wood514" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -5 )
+
+[node name="floor-wood515" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -5 )
+
+[node name="floor-wood516" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -5 )
+
+[node name="floor-wood517" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -5 )
+
+[node name="floor-wood518" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -6 )
+
+[node name="floor-wood519" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -6 )
+
+[node name="floor-wood520" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -6 )
+
+[node name="floor-wood521" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -6 )
+
+[node name="floor-wood522" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -6 )
+
+[node name="floor-wood523" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -6 )
+
+[node name="floor-wood524" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -6 )
+
+[node name="Stairs7" parent="." groups=["stairs"] instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -4 )
+
+[node name="cabin-wall135" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -7, 4, -2 )
+
+[node name="cabin-wall136" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -9, 4, -2 )
+
+[node name="cabin-wall137" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -11, 4, -2 )
+
+[node name="cabin-wall138" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -13, 4, -2 )
+
+[node name="cabin-wall139" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 4, -2 )
+
+[node name="cabin-wall140" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 4, -4 )
+
+[node name="cabin-wall141" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( 1.31135e-07, 0, -1, 0, 1, 0, 1, 0, 1.31135e-07, -13, 4, -6 )
+
+[node name="cabin-wall142" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -13, 4, -6 )
+
+[node name="cabin-wall143" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -11, 4, -6 )
+
+[node name="cabin-wall144" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -9, 4, -6 )
+
+[node name="cabin-wall145" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -8.74232e-08, 0, 1, 0, 8.74232e-08, 0, -1, -7, 4, -6 )
+
+[node name="cabin-wall146" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 4, -6 )
+
+[node name="cabin-wall147" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 4, -4 )
+
+[node name="cabin-wall148" parent="." groups=["walls"] instance=ExtResource( 7 )]
+transform = Transform( -4.37118e-08, 0, 1, 0, 1, 0, -1, 0, -4.37118e-08, -7, 4, -2 )
+
+[node name="cabin-window-a85" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -2 )
+
+[node name="cabin-window-a86" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -2 )
+
+[node name="cabin-window-a94" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, -2 )
+
+[node name="cabin-window-a95" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -2 )
+
+[node name="cabin-window-a96" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, -2 )
+
+[node name="cabin-window-a97" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -2 )
+
+[node name="cabin-window-a87" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 4, -3 )
+
+[node name="cabin-window-a88" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 4, -5 )
+
+[node name="cabin-window-a89" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -12, 4, -6 )
+
+[node name="cabin-window-a90" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -10, 4, -6 )
+
+[node name="cabin-window-a91" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -8, 4, -6 )
+
+[node name="cabin-window-a92" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 4, -5 )
+
+[node name="cabin-window-a93" parent="." groups=["walls"] instance=ExtResource( 5 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -7, 4, -3 )
+
+[node name="floor-wood525" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -2 )
+
+[node name="floor-wood526" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -2 )
+
+[node name="floor-wood527" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -2 )
+
+[node name="floor-wood528" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -2 )
+
+[node name="floor-wood529" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -2 )
+
+[node name="floor-wood530" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -2 )
+
+[node name="floor-wood531" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -2 )
+
+[node name="floor-wood532" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -3 )
+
+[node name="floor-wood533" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -3 )
+
+[node name="floor-wood534" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -3 )
+
+[node name="floor-wood535" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -3 )
+
+[node name="floor-wood536" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -3 )
+
+[node name="floor-wood537" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -3 )
+
+[node name="floor-wood538" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -3 )
+
+[node name="floor-wood539" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -4 )
+
+[node name="floor-wood540" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -4 )
+
+[node name="floor-wood542" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -4 )
+
+[node name="floor-wood543" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -4 )
+
+[node name="floor-wood544" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -4 )
+
+[node name="floor-wood545" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -4 )
+
+[node name="floor-wood546" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -5 )
+
+[node name="floor-wood547" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -5 )
+
+[node name="floor-wood548" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -5 )
+
+[node name="floor-wood549" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -5 )
+
+[node name="floor-wood550" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -5 )
+
+[node name="floor-wood551" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -5 )
+
+[node name="floor-wood552" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -5 )
+
+[node name="floor-wood553" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -6 )
+
+[node name="floor-wood554" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, -6 )
+
+[node name="floor-wood555" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -6 )
+
+[node name="floor-wood556" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -6 )
+
+[node name="floor-wood557" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -6 )
+
+[node name="floor-wood558" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4, -6 )
+
+[node name="floor-wood559" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -6 )
+
+[node name="floor-wood560" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5, -2 )
+
+[node name="floor-wood561" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 5, -2 )
+
+[node name="floor-wood562" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, -2 )
+
+[node name="floor-wood563" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 5, -2 )
+
+[node name="floor-wood564" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 5, -2 )
+
+[node name="floor-wood565" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 5, -2 )
+
+[node name="floor-wood566" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 5, -2 )
+
+[node name="floor-wood567" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5, -3 )
+
+[node name="floor-wood568" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 5, -3 )
+
+[node name="floor-wood569" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, -3 )
+
+[node name="floor-wood570" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 5, -3 )
+
+[node name="floor-wood571" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 5, -3 )
+
+[node name="floor-wood572" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 5, -3 )
+
+[node name="floor-wood573" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 5, -3 )
+
+[node name="floor-wood574" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5, -4 )
+
+[node name="floor-wood575" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, -4 )
+
+[node name="floor-wood576" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 5, -4 )
+
+[node name="floor-wood577" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 5, -4 )
+
+[node name="floor-wood578" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 5, -4 )
+
+[node name="floor-wood579" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 5, -4 )
+
+[node name="floor-wood580" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5, -5 )
+
+[node name="floor-wood581" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 5, -5 )
+
+[node name="floor-wood582" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, -5 )
+
+[node name="floor-wood583" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 5, -5 )
+
+[node name="floor-wood584" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 5, -5 )
+
+[node name="floor-wood585" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 5, -5 )
+
+[node name="floor-wood586" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 5, -5 )
+
+[node name="floor-wood587" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5, -6 )
+
+[node name="floor-wood588" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 5, -6 )
+
+[node name="floor-wood589" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 5, -6 )
+
+[node name="floor-wood590" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 5, -6 )
+
+[node name="floor-wood591" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 5, -6 )
+
+[node name="floor-wood592" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 5, -6 )
+
+[node name="floor-wood593" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 5, -6 )
 
 [node name="floor-wood60" parent="." instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
@@ -841,7 +2251,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.47294, 0, -6.41564 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52395, 0.133249, -6.4644 )
 
 [node name="loungeSofa" parent="." instance=ExtResource( 13 )]
-transform = Transform( 0.0144682, 0, 0.999895, 0, 1, 0, -0.999895, 0, 0.0144682, -3.78815, 0, -5.48916 )
+transform = Transform( 0.0144682, 0, 0.999895, 0, 1, 0, -0.999895, 0, 0.0144682, -2.83769, 0, -4.56194 )
 
 [node name="tableCloth2" parent="." instance=ExtResource( 14 )]
 transform = Transform( -0.0297884, 0, 0.999556, 0, 1, 0, -0.999556, 0, -0.0297884, 15.2598, 0, 9.3604 )

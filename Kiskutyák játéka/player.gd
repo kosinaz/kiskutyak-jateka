@@ -162,8 +162,8 @@ func move_towards(relative_translation):
 				y_translation.y += 0.5
 			else:
 				return false
-	if has_node("Husky/AnimationPlayer"):
-		$"Husky/AnimationPlayer".play("Walk", -1, 2)
+	if has_node("Model/AnimationPlayer"):
+		$"Model/AnimationPlayer".play("Walk", -1, 2)
 	rotation_degrees.y = _degrees[Vector3(relative_translation.x, 0, relative_translation.z)]
 	_tween = get_tree().create_tween()
 	_tween.tween_property(self, "translation", relative_translation + y_translation, 0.5).as_relative()
@@ -172,8 +172,6 @@ func move_towards(relative_translation):
 
 func _moved():
 	emit_signal("moved")
-	if $"%Player".has_node("Husky/AnimationPlayer"):
-		$"%Player/Husky/AnimationPlayer".play("Idle")
 
 func _get_group_member_at(group, translation):
 	for member in get_tree().get_nodes_in_group(group):

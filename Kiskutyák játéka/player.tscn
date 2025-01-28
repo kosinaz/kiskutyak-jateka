@@ -6,55 +6,55 @@
 [node name="Player" type="Spatial"]
 script = ExtResource( 2 )
 
-[node name="Husky" parent="." instance=ExtResource( 1 )]
+[node name="Model" parent="." instance=ExtResource( 1 )]
 transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
 
-[node name="BoneAttachment" parent="Husky/RootNode/AnimalArmature/Skeleton" index="0"]
+[node name="BoneAttachment" parent="Model/RootNode/AnimalArmature/Skeleton" index="0"]
 transform = Transform( -0.998011, 0.0441767, 0.0449675, -0.0543322, -0.964543, -0.258271, 0.0319635, -0.260201, 0.965025, 0.000581512, -0.018054, 0.0262964 )
 
-[node name="BoneAttachment2" parent="Husky/RootNode/AnimalArmature/Skeleton" index="1"]
+[node name="BoneAttachment2" parent="Model/RootNode/AnimalArmature/Skeleton" index="1"]
 transform = Transform( -0.419463, 0.357019, -0.834618, -0.891604, -0.334783, 0.304895, -0.170562, 0.872042, 0.458749, 0.00364911, -0.0180283, 0.0303033 )
 
-[node name="BoneAttachment3" parent="Husky/RootNode/AnimalArmature/Skeleton" index="2"]
+[node name="BoneAttachment3" parent="Model/RootNode/AnimalArmature/Skeleton" index="2"]
 transform = Transform( -0.510891, -0.186029, 0.839275, 0.827109, -0.372428, 0.420935, 0.234264, 0.909225, 0.344136, -0.00188836, -0.0184122, 0.0306825 )
 
-[node name="BoneAttachment4" parent="Husky/RootNode/AnimalArmature/Skeleton" index="3"]
+[node name="BoneAttachment4" parent="Model/RootNode/AnimalArmature/Skeleton" index="3"]
 transform = Transform( -0.999609, -0.00493428, -0.0275584, 0.0279552, -0.229432, -0.972923, -0.00152201, -0.973314, 0.229482, 0.00301714, -0.00849009, 0.0106007 )
 
-[node name="BoneAttachment5" parent="Husky/RootNode/AnimalArmature/Skeleton" index="4"]
+[node name="BoneAttachment5" parent="Model/RootNode/AnimalArmature/Skeleton" index="4"]
 transform = Transform( -0.999608, 0.00493776, 0.0275605, -0.0279582, -0.229424, -0.972925, 0.00151897, -0.973313, 0.229472, -0.00301714, -0.00849012, 0.0106007 )
 
-[node name="BoneAttachment6" parent="Husky/RootNode/AnimalArmature/Skeleton" index="5"]
+[node name="BoneAttachment6" parent="Model/RootNode/AnimalArmature/Skeleton" index="5"]
 transform = Transform( -0.99978, -0.0154726, -0.0141198, 0.0197558, -0.472459, -0.88113, 0.0069623, -0.881216, 0.472661, 0.00380803, 0.0123181, 0.00591371 )
 
-[node name="BoneAttachment7" parent="Husky/RootNode/AnimalArmature/Skeleton" index="6"]
+[node name="BoneAttachment7" parent="Model/RootNode/AnimalArmature/Skeleton" index="6"]
 transform = Transform( -0.99978, 0.0154718, 0.01412, -0.0197557, -0.47246, -0.881131, -0.00696143, -0.881217, 0.472661, -0.00380804, 0.0123181, 0.00591371 )
 
-[node name="BoneAttachment8" parent="Husky/RootNode/AnimalArmature/Skeleton" index="7"]
+[node name="BoneAttachment8" parent="Model/RootNode/AnimalArmature/Skeleton" index="7"]
 transform = Transform( 0.950234, 0.2017, -0.237428, -0.153451, -0.360222, -0.920159, -0.271123, 0.9108, -0.311344, 0.00135879, 0.0129153, 0.0281645 )
 
-[node name="BoneAttachment9" parent="Husky/RootNode/AnimalArmature/Skeleton" index="8"]
+[node name="BoneAttachment9" parent="Model/RootNode/AnimalArmature/Skeleton" index="8"]
 transform = Transform( 1, -7.83695e-19, 2.38419e-07, 2.38416e-07, 0.00434804, -0.99999, -1.03665e-09, 0.99999, 0.00434804, 0.00217028, -0.0416885, 0.00811262 )
 
-[node name="BoneAttachment10" parent="Husky/RootNode/AnimalArmature/Skeleton" index="9"]
+[node name="BoneAttachment10" parent="Model/RootNode/AnimalArmature/Skeleton" index="9"]
 transform = Transform( 1, -1.56739e-18, -3.40762e-21, 3.40762e-21, 0.00434804, -0.99999, 1.56739e-18, 0.99999, 0.00434804, 0.00217283, -0.0388079, 0.00811964 )
 
-[node name="BoneAttachment11" parent="Husky/RootNode/AnimalArmature/Skeleton" index="10"]
+[node name="BoneAttachment11" parent="Model/RootNode/AnimalArmature/Skeleton" index="10"]
 transform = Transform( 1, -7.83694e-19, -2.38419e-07, -2.38416e-07, 0.00434804, -0.99999, 1.03665e-09, 0.99999, 0.00434804, -0.00217028, -0.0416885, 0.00811262 )
 
-[node name="BoneAttachment12" parent="Husky/RootNode/AnimalArmature/Skeleton" index="11"]
+[node name="BoneAttachment12" parent="Model/RootNode/AnimalArmature/Skeleton" index="11"]
 transform = Transform( 1, -1.56739e-18, -3.40762e-21, 3.40762e-21, 0.00434804, -0.99999, 1.56739e-18, 0.99999, 0.00434804, -0.00217283, -0.0388079, 0.00811964 )
 
-[node name="BoneAttachment13" parent="Husky/RootNode/AnimalArmature/Skeleton" index="12"]
+[node name="BoneAttachment13" parent="Model/RootNode/AnimalArmature/Skeleton" index="12"]
 transform = Transform( -1, -6.06536e-08, 2.14647e-06, 6.06531e-08, -1, -5.36442e-07, 2.14647e-06, -5.96046e-08, 1, 0.00374001, 0.00881191, 0.000687746 )
 
-[node name="BoneAttachment14" parent="Husky/RootNode/AnimalArmature/Skeleton" index="13"]
+[node name="BoneAttachment14" parent="Model/RootNode/AnimalArmature/Skeleton" index="13"]
 transform = Transform( -1, -2.90547e-08, 2.65452e-06, -4.17537e-07, -0.985773, -0.168082, 2.62164e-06, -0.168082, 0.985773, 0.00297436, -0.0116797, 0.000716307 )
 
-[node name="BoneAttachment15" parent="Husky/RootNode/AnimalArmature/Skeleton" index="14"]
+[node name="BoneAttachment15" parent="Model/RootNode/AnimalArmature/Skeleton" index="14"]
 transform = Transform( -1, 6.06536e-08, -2.14647e-06, -6.06531e-08, -1, -5.36442e-07, -2.14647e-06, -5.96046e-08, 1, -0.00374001, 0.00881191, 0.000687746 )
 
-[node name="BoneAttachment16" parent="Husky/RootNode/AnimalArmature/Skeleton" index="15"]
+[node name="BoneAttachment16" parent="Model/RootNode/AnimalArmature/Skeleton" index="15"]
 transform = Transform( -1, 2.90547e-08, -2.65452e-06, 4.17537e-07, -0.985773, -0.168082, -2.62164e-06, -0.168082, 0.985773, -0.00297436, -0.0116797, 0.000716307 )
 
-[editable path="Husky"]
+[editable path="Model"]

@@ -16,4 +16,16 @@ func _process(_delta):
 		$"%Player".move_forward()
 		moving = true
 		return
+	if Input.is_action_pressed("p2_left"):
+		$"%Player2".strafe_left()
+		moving = true
+		return
+	if Input.is_action_pressed("p2_right"):
+		$"%Player2".strafe_right()
+		moving = true
+		return
+	if Input.is_action_pressed("p2_forward"):
+		$"%Player2".move_forward()
+		moving = true
+		return
 
